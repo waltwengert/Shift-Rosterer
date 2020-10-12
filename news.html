@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News</title>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script>
+    function showRSS() {
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+          document.getElementById("rssOutput").innerHTML=this.responseText;
+        }
+      }
+      xmlhttp.open("GET","getNewsRSS.php",true);
+      xmlhttp.send();
+    }
+    </script>
+
+		<script src="js/jquery-3.2.1.js"></script>
+
+		<script>
+			 $.ajax({ url: "verify_session.php",
+		  					success:function(data) { if (data) { window.location.replace("login.html"); } }
+							});
+		</script>
+</head>
+
+<body onload="showRSS()">
+	<table>
+		<tr>
+			<td class="heading-icon">
+				<input type="image" src="images/menu_img.png" alt="Menu" onclick="location.href='menu.html';" class="icon"/>
+			</td>
+			<td class="heading-text">
+				<h2>News</h2>
+			</td>
+		</tr>
+	</table>
+
+  <div id="rssOutput" class="blog">Company News Loading...</div>
+</body>
+</html>

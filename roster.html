@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roster</title>
+  <link rel="stylesheet" href="styles/main.css">
+	<script src="js/jquery-3.2.1.js"></script>
+
+	<script>
+		 $.ajax({ url: "verify_session.php",
+							success:function(data) { if (data) { window.location.replace("login.html"); } }
+						});
+	</script>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td class="heading-icon">
+				<input type="image" src="images/menu_img.png" alt="Menu" onclick="location.href='menu.html';" class="icon"/>
+			</td>
+			<td class="heading-text">
+				<h2>Roster</h2>
+			</td>
+		</tr>
+	</table>
+
+  <table id="roster_table">
+    <tr>
+      <th>Mon</th>
+      <th>Tues</th>
+      <th>Wed</th>
+      <th>Thurs</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </table>
+
+	<br><br>
+	<form id="roster_lookup">
+		<input id="roster_lookup_field" type="text" placeholder="Employee ID">
+		<input id="roster_lookup_btn" type="button" value="Look Up">
+		<br><br>
+		<input id="roster_reset" type="button" value="Reset">
+	</form>
+
+  <script src="js/rost.js"></script>
+</body>
+</html>

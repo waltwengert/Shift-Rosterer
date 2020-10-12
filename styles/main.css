@@ -1,0 +1,159 @@
+body {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+th {
+  border-bottom: 2px solid #dddddd;
+  text-align: left;
+  vertical-align: text-top;
+  padding: 8px;
+  width: 14%;
+}
+
+td {
+  height: auto;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+
+
+.body-content {
+  background-color: white;
+}
+
+.menu-grid {
+  width: 50%;
+  margin: auto;
+}
+
+.menu-grid-cell {
+  border: none;
+  text-align: center;
+}
+
+.roster-cell {
+  width: 50%;
+  background-color: #11B2DC;
+}
+
+.avail-cell {
+  width: 50%;
+  background-color: #61BF81;
+}
+
+.news-cell {
+  width: 50%;
+  background-color: #5B58A9;
+}
+
+.logout-cell {
+  width: 50%;
+  background-color: #E6B241;
+}
+
+.menu-text {
+  color: white;
+}
+
+.heading-text {
+  vertical-align: middle;
+  width: 52.5%;
+  border: none;
+  text-align: left;
+}
+
+.heading-icon {
+  vertical-align: middle;
+  width: 47.5%;
+  border: none;
+  text-align: right;
+}
+
+.highlight {
+   background-color: lightgrey;
+}
+
+.avail_t {
+  border: none;
+  border-right: 1px solid #dddddd;
+  height: auto;
+  text-align: right;
+  vertical-align: bottom;
+  width: 5.375%
+}
+
+.avail_working {
+  background-color: blue;
+}
+
+.avail_working_se {
+  background-color: green;
+}
+
+.avail_h {
+  border-bottom: none;
+  border-right: 2px solid #dddddd;
+  vertical-align: middle;
+}
+
+.date {
+  text-align: right;
+}
+
+.day {
+  height: 110px;
+}
+
+.area_S,.area_R,.area_H,.area_C,.area_B {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: none;
+  box-shadow:none;
+  border: 0;
+}
+
+.area_S:hover,.area_R:hover,.area_H:hover,.area_C:hover,.area_B:hover {
+  background-color: yellow;
+}
+
+.area_S {
+  background-color: blue;
+}
+
+.area_R {
+  background-color: orange;
+}
+
+.area_H {
+  background-color: green;
+}
+
+.area_C {
+  background-color: purple;
+}
+
+.area_B {
+  background-color: grey;
+}
+
+.current_day {
+  background-color: lightgrey;
+}
+
+.area_ {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}

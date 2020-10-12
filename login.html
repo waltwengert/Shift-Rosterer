@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/main.css">
+	<script src="js/jquery-3.2.1.js"></script>
+
+	<script>
+		 $.ajax({ url: "verify_session.php",
+	  					success:function(data) { if (!data) { window.location.replace("menu.html"); } }
+						});
+	</script>
+</head>
+
+<body>
+  <div class="body-content">
+    <h1>Retlaw Industries</h1>
+    <h2>Login</h2>
+
+	  <input id="login_id" type="text" placeholder="Employee ID" name="id"/><br>
+	  <input id="login_pass" type="password" placeholder="Password" name="password"/><br>
+    <input id="login_btn" type="submit" value="Login" name="login"/><br>
+    <p id="login_error"></p>
+	  <a href="forgot.html">Forgot Password?</a>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
