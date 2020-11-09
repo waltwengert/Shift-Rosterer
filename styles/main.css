@@ -1,6 +1,8 @@
 body {
   text-align: center;
   font-family: arial, sans-serif;
+
+  background-color: azure;
 }
 
 table {
